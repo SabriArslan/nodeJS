@@ -4,6 +4,7 @@
   "description": "Excersises",
   "main": "program.js",
   "scripts": {
+    "start": "node program.js",
     "test": "mocha tests"
   },
   "repository": {

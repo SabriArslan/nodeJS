@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#install mocha globally
+npm install -g mocha
+
 #install packages
 npm install
 

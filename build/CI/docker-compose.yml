@@ -1,13 +1,11 @@
 version: "2"
 services:
-  CIBuilder:
-    label: "CIBuilder"
-    user: "node"
+  cibuilder:
+    build: ./
+    user: "root"
     working_dir: /home/node/app
     environment:
-      - NODE_ENV=production
+      - NODE_ENV=test
     volumes:
       - ../../:/home/node/app
-    expose:
-      - "8081"
-    command: "mocha /home/node/app/tests"
+    command: /bin/bash build/CI/build.sh

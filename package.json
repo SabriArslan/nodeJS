@@ -3,12 +3,8 @@
   "version": "1.0.0",
   "description": "Excersises",
   "main": "program.js",
-  "directories": {
-    "lib": "lib",
-    "test": "tests"
-  },
   "scripts": {
-    "test": "nodeunit tests"
+    "test": "mocha tests"
   },
   "repository": {
     "type": "git",
@@ -22,5 +18,10 @@
   "homepage": "https://github.com/SabriArslan/nodeJS#readme",
   "dependencies": {
     "express": "~4.16.2"
+  },
+  "devDependencies": {
+    "mocha": "~5.0.1",
+    "should": "~13.2.1",
+    "supertest": "~3.0.0"
   }
 }

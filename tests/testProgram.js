@@ -7,22 +7,20 @@ var server = supertest.agent("http://localhost:3000");
 
 // UNIT test begin
 
-describe("responds with Hello, World!",function(){
+describe("responds with Hello, World!", function() {
 
   // #1 should return home page
-  it("should return home page",function(done){
+  it("should return home page", function(done) {
     // calling home page
     server
-    .get("/")
-    .expect("Content-type",/text/)
-    .expect(200) // THis is HTTP response
-    .end(function(err,res){
-      
-      //res.body.should("Hello, World!");
-      // HTTP status should be 200
-      //res.status.should.equal(200);
-      done();
-    });
+        .get("/api/test")
+        .expect("Content-type",/text/)
+        .expect(200) // THis is HTTP response
+        .end( function(err,res) {
+            res.status.should.equal(200);
+            res.text.should.equal("success");
+            done();
+        });
   });
 
 });

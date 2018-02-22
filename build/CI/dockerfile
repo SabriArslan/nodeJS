@@ -1,0 +1,4 @@
+FROM node:8
+# replace this with your application's default port
+USER root
+RUN npm install -g mocha

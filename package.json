@@ -1,0 +1,26 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "Excersises",
+  "main": "program.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "nodeunit tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SabriArslan/nodeJS.git"
+  },
+  "author": "Sabri Arslan",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/SabriArslan/nodeJS/issues"
+  },
+  "homepage": "https://github.com/SabriArslan/nodeJS#readme",
+  "dependencies": {
+    "express": "~4.16.2"
+  }
+}

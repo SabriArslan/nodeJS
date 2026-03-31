@@ -21,7 +21,7 @@
     "express": "~4.22.1"
   },
   "devDependencies": {
-    "mocha": "~10.2.0",
+    "mocha": "~10.8.2",
     "should": "~13.2.1",
     "supertest": "~3.0.0"
   }
